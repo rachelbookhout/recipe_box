@@ -1,0 +1,11 @@
+<h1><%=@recipe_info[0]["name"]%></h1>
+
+<p><%=@recipe_info[0]["description"]%></p>
+
+<ul>
+<%@recipe_info.each do |recipe|%>
+<li><p><%=recipe["ingredients"]%></p></li>
+<%end%>
+</ul>
+
+<p><%= @recipe_info[0]["instructions"]%></p>
